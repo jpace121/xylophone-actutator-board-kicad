@@ -1,0 +1,455 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:act-board-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Actuation Board - Xylophone Project"
+Date ""
+Rev "0"
+Comp "James Pace"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED_ARGB D2
+U 1 1 5865AF3E
+P 1900 1250
+F 0 "D2" H 1900 1620 50  0000 C CNN
+F 1 "FD-5WSRGB-A" H 2050 900 50  0000 C CNN
+F 2 "LEDs:LED-RGB-5MM_Common_Cathode" H 1900 1200 50  0001 C CNN
+F 3 "" H 1900 1200 50  0000 C CNN
+	1    1900 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5865AFE6
+P 1400 1750
+F 0 "R3" V 1480 1750 50  0000 C CNN
+F 1 "150" V 1400 1750 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 1330 1750 50  0001 C CNN
+F 3 "" H 1400 1750 50  0000 C CNN
+	1    1400 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5865B02D
+P 1900 1750
+F 0 "R5" V 1980 1750 50  0000 C CNN
+F 1 "75" V 1900 1750 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 1830 1750 50  0001 C CNN
+F 3 "" H 1900 1750 50  0000 C CNN
+	1    1900 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 5865B0CC
+P 2500 1750
+F 0 "R7" V 2580 1750 50  0000 C CNN
+F 1 "75" V 2500 1750 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 2430 1750 50  0001 C CNN
+F 3 "" H 2500 1750 50  0000 C CNN
+	1    2500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5865B13E
+P 1100 2450
+F 0 "R1" V 1180 2450 50  0000 C CNN
+F 1 "2.7K" V 1100 2450 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 1030 2450 50  0001 C CNN
+F 3 "" H 1100 2450 50  0000 C CNN
+	1    1100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5865BCF8
+P 1600 2450
+F 0 "R4" V 1680 2450 50  0000 C CNN
+F 1 "2.7K" V 1600 2450 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 1530 2450 50  0001 C CNN
+F 3 "" H 1600 2450 50  0000 C CNN
+	1    1600 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5865BD26
+P 2200 2450
+F 0 "R6" V 2280 2450 50  0000 C CNN
+F 1 "2.7K" V 2200 2450 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 2130 2450 50  0001 C CNN
+F 3 "" H 2200 2450 50  0000 C CNN
+	1    2200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 5865C082
+P 1900 950
+F 0 "#PWR01" H 1900 800 50  0001 C CNN
+F 1 "+5V" H 1900 1090 50  0000 C CNN
+F 2 "" H 1900 950 50  0000 C CNN
+F 3 "" H 1900 950 50  0000 C CNN
+	1    1900 950 
+	1    0    0    -1  
+$EndComp
+Text Notes 550  650  0    60   ~ 0
+LED Circuit(s)
+Text Label 1100 2950 1    60   ~ 0
+R_LED_1
+Text Label 1600 2950 1    60   ~ 0
+G_LED_1
+Text Label 2200 2950 1    60   ~ 0
+B_LED_1
+Text Notes 750  800  0    60   ~ 0
+Circuit 1\n
+$Comp
+L D D1
+U 1 1 5865CD1F
+P 1100 5300
+F 0 "D1" H 1100 5400 50  0000 C CNN
+F 1 "1N4001" H 1100 5200 50  0000 C CNN
+F 2 "Diodes_THT:Diode_DO-35_SOD27_Horizontal_RM10" H 1100 5300 50  0001 C CNN
+F 3 "" H 1100 5300 50  0000 C CNN
+	1    1100 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5865CE59
+P 1100 6100
+F 0 "R2" V 1180 6100 50  0000 C CNN
+F 1 "10k" V 1100 6100 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 1030 6100 50  0001 C CNN
+F 3 "" H 1100 6100 50  0000 C CNN
+	1    1100 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 5865CED8
+P 1100 5050
+F 0 "#PWR02" H 1100 4900 50  0001 C CNN
+F 1 "+5V" H 1100 5190 50  0000 C CNN
+F 2 "" H 1100 5050 50  0000 C CNN
+F 3 "" H 1100 5050 50  0000 C CNN
+	1    1100 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  5950 1100 5950
+Connection ~ 1400 6300
+Wire Wire Line
+	1100 6300 1400 6300
+Wire Wire Line
+	1400 6100 1400 6400
+Wire Wire Line
+	1100 5150 1500 5150
+Wire Wire Line
+	1100 5050 1100 5150
+Wire Wire Line
+	2200 2600 2200 3000
+Wire Wire Line
+	1600 2600 1600 3000
+Wire Wire Line
+	1100 2600 1100 3000
+Wire Wire Line
+	1900 950  1900 1050
+Wire Wire Line
+	2500 2450 2500 2400
+Wire Wire Line
+	1900 2500 1900 2450
+Wire Wire Line
+	1400 2500 1400 2450
+Wire Wire Line
+	2200 2300 2200 2200
+Wire Wire Line
+	1600 2300 1600 2250
+Wire Wire Line
+	1100 2300 1100 2250
+Wire Wire Line
+	2500 2000 2500 1900
+Wire Wire Line
+	1900 2050 1900 1900
+Wire Wire Line
+	1400 1450 1700 1450
+Wire Wire Line
+	1400 1600 1400 1450
+Wire Wire Line
+	2500 1450 2500 1600
+Wire Wire Line
+	2100 1450 2500 1450
+Wire Wire Line
+	1400 2050 1400 1900
+Wire Wire Line
+	1900 1450 1900 1600
+Wire Wire Line
+	1100 5450 1100 5600
+Wire Wire Line
+	1100 5600 1400 5600
+Wire Wire Line
+	1400 5450 1400 5700
+Connection ~ 1400 5600
+Wire Wire Line
+	1100 6300 1100 6250
+Text Notes 550  4650 0    60   ~ 0
+Solenoid Circuit(s)
+Text Notes 700  4800 0    60   ~ 0
+Circuit 1
+Text Label 750  5950 0    60   ~ 0
+SOL_1
+$Comp
+L PN2222A Q1
+U 1 1 58713831
+P 1300 2250
+F 0 "Q1" H 950 2550 50  0000 L CNN
+F 1 "PN2222A" H 950 2450 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 1500 2175 50  0001 L CIN
+F 3 "" H 1300 2250 50  0000 L CNN
+	1    1300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PN2222A Q3
+U 1 1 58713A65
+P 1800 2250
+F 0 "Q3" H 1450 2550 50  0000 L CNN
+F 1 "PN2222A" H 1450 2450 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 2000 2175 50  0001 L CIN
+F 3 "" H 1800 2250 50  0000 L CNN
+	1    1800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PN2222A Q4
+U 1 1 58713ADE
+P 2400 2200
+F 0 "Q4" H 2000 2450 50  0000 L CNN
+F 1 "PN2222A" H 2000 2350 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 2600 2125 50  0001 L CIN
+F 3 "" H 2400 2200 50  0000 L CNN
+	1    2400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRLB8721PBF Q2
+U 1 1 587140DC
+P 1300 5900
+F 0 "Q2" H 1550 5975 50  0000 L CNN
+F 1 "IRLB8721PBF" H 1550 5900 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical_LargePads" H 1550 5825 50  0001 L CIN
+F 3 "" H 1300 5900 50  0000 L CNN
+	1    1300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 58714C09
+P 1700 5300
+F 0 "P2" H 1700 5450 50  0000 C CNN
+F 1 "S2B-PH-K-S(LF)(SN)" V 1800 5300 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 1700 5300 50  0001 C CNN
+F 3 "" H 1700 5300 50  0000 C CNN
+	1    1700 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5150 1500 5250
+Wire Wire Line
+	1500 5350 1500 5450
+Wire Wire Line
+	1500 5450 1400 5450
+$Comp
+L CONN_01X06 P1
+U 1 1 58715782
+P 1250 3900
+F 0 "P1" H 1250 4250 50  0000 C CNN
+F 1 "B6B-PH-K-S(LF)(SN)" V 1350 3900 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_B6B-PH-K_06x2.00mm_Straight" H 1250 3900 50  0001 C CNN
+F 3 "" H 1250 3900 50  0000 C CNN
+	1    1250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 58715EE1
+P 650 3750
+F 0 "#PWR03" H 650 3600 50  0001 C CNN
+F 1 "+5V" H 650 3890 50  0000 C CNN
+F 2 "" H 650 3750 50  0000 C CNN
+F 3 "" H 650 3750 50  0000 C CNN
+	1    650  3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3750 650  3750
+Wire Wire Line
+	1050 3850 850  3850
+Wire Wire Line
+	1050 3950 850  3950
+Wire Wire Line
+	1050 4050 850  4050
+Wire Wire Line
+	1050 4150 850  4150
+Wire Wire Line
+	1050 3650 1050 3350
+Wire Wire Line
+	1050 3350 650  3350
+Text Notes 1500 3650 0    60   ~ 0
+Do I need to reorder GND and 5V?
+Text Label 850  4150 0    60   ~ 0
+SOL_1
+Text Label 850  4050 0    60   ~ 0
+B_LED_1
+Text Label 850  3950 0    60   ~ 0
+G_LED_1
+Text Label 850  3850 0    60   ~ 0
+R_LED_1
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 587192E4
+P 900 7600
+F 0 "#FLG04" H 900 7695 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 7780 50  0000 C CNN
+F 2 "" H 900 7600 50  0000 C CNN
+F 3 "" H 900 7600 50  0000 C CNN
+	1    900  7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 58719343
+P 1300 7600
+F 0 "#FLG05" H 1300 7695 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 7780 50  0000 C CNN
+F 2 "" H 1300 7600 50  0000 C CNN
+F 3 "" H 1300 7600 50  0000 C CNN
+	1    1300 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR06
+U 1 1 587196BD
+P 600 7600
+F 0 "#PWR06" H 600 7450 50  0001 C CNN
+F 1 "+5V" H 600 7740 50  0000 C CNN
+F 2 "" H 600 7600 50  0000 C CNN
+F 3 "" H 600 7600 50  0000 C CNN
+	1    600  7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 7600 1500 7600
+Wire Wire Line
+	600  7600 900  7600
+Wire Wire Line
+	1500 7600 1500 7700
+$Comp
+L GND #PWR07
+U 1 1 58719BE9
+P 650 3350
+F 0 "#PWR07" H 650 3100 50  0001 C CNN
+F 1 "GND" H 650 3200 50  0000 C CNN
+F 2 "" H 650 3350 50  0000 C CNN
+F 3 "" H 650 3350 50  0000 C CNN
+	1    650  3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 58719C28
+P 2500 2450
+F 0 "#PWR08" H 2500 2200 50  0001 C CNN
+F 1 "GND" H 2500 2300 50  0000 C CNN
+F 2 "" H 2500 2450 50  0000 C CNN
+F 3 "" H 2500 2450 50  0000 C CNN
+	1    2500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 58719C60
+P 1900 2500
+F 0 "#PWR09" H 1900 2250 50  0001 C CNN
+F 1 "GND" H 1900 2350 50  0000 C CNN
+F 2 "" H 1900 2500 50  0000 C CNN
+F 3 "" H 1900 2500 50  0000 C CNN
+	1    1900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 58719C98
+P 1400 2500
+F 0 "#PWR010" H 1400 2250 50  0001 C CNN
+F 1 "GND" H 1400 2350 50  0000 C CNN
+F 2 "" H 1400 2500 50  0000 C CNN
+F 3 "" H 1400 2500 50  0000 C CNN
+	1    1400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 58719DD2
+P 1400 6400
+F 0 "#PWR011" H 1400 6150 50  0001 C CNN
+F 1 "GND" H 1400 6250 50  0000 C CNN
+F 2 "" H 1400 6400 50  0000 C CNN
+F 3 "" H 1400 6400 50  0000 C CNN
+	1    1400 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 58719E0A
+P 1500 7700
+F 0 "#PWR012" H 1500 7450 50  0001 C CNN
+F 1 "GND" H 1500 7550 50  0000 C CNN
+F 2 "" H 1500 7700 50  0000 C CNN
+F 3 "" H 1500 7700 50  0000 C CNN
+	1    1500 7700
+	1    0    0    -1  
+$EndComp
+Text Notes 600  7300 0    60   ~ 0
+Power Flag
+Text Notes 650  3250 0    60   ~ 0
+Connector 1
+$EndSCHEMATC
