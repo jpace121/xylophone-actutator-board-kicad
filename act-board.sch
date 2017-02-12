@@ -44,17 +44,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LED_ARGB D2
-U 1 1 5865AF3E
-P 1900 1250
-F 0 "D2" H 1900 1620 50  0000 C CNN
-F 1 "FD-5WSRGB-A" H 2050 900 50  0000 C CNN
-F 2 "LEDs:LED-RGB-5MM_Common_Cathode" H 1900 1200 50  0001 C CNN
-F 3 "" H 1900 1200 50  0000 C CNN
-	1    1900 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
 L R R3
 U 1 1 5865AFE6
 P 1400 1750
@@ -180,7 +169,9 @@ Connection ~ 1400 6300
 Wire Wire Line
 	1100 6300 1400 6300
 Wire Wire Line
-	1400 6100 1400 6400
+	1400 6100 1400 6300
+Wire Wire Line
+	1400 6300 1400 6400
 Wire Wire Line
 	1100 5150 1500 5150
 Wire Wire Line
@@ -226,7 +217,9 @@ Wire Wire Line
 Wire Wire Line
 	1100 5600 1400 5600
 Wire Wire Line
-	1400 5450 1400 5700
+	1400 5450 1400 5600
+Wire Wire Line
+	1400 5600 1400 5700
 Connection ~ 1400 5600
 Wire Wire Line
 	1100 6300 1100 6250
@@ -452,4 +445,15 @@ Text Notes 600  7300 0    60   ~ 0
 Power Flag
 Text Notes 650  3250 0    60   ~ 0
 Connector 1
+$Comp
+L LED_RAGB D3
+U 1 1 58A093AD
+P 1900 1250
+F 0 "D3" H 1900 1620 50  0000 C CNN
+F 1 "FD-5WSRGB-A" H 2050 900 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 1900 1200 50  0001 C CNN
+F 3 "" H 1900 1200 50  0000 C CNN
+	1    1900 1250
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
